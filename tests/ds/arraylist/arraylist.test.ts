@@ -32,6 +32,13 @@ test('Insert at 0', () => {
     expect(a.get(2)).toBe(2);
 });
 
+test('Insert at head', () => {
+    let a = new ArrayList<Number>();
+    a.insert(3, 0);
+    expect(a.getSize()).toBe(1);
+    expect(a.get(0)).toBe(3);
+});
+
 test('Insert at tail', () => {
     let a = new ArrayList<Number>();
     a.add(1);
@@ -123,4 +130,25 @@ test('Deep test', () => {
         a.delete(index);
     }
     expect(a.getSize()).toBe(0);
+});
+
+test('Test insert error', () => {
+    let a = new ArrayList<Number>();
+
+    expect(() => {a.insert(1, -1);}).toThrow();
+    expect(() => {a.insert(1, 5);}).toThrow();
+});
+
+test('Test get error', () => {
+    let a = new ArrayList<Number>();
+
+    expect(() => {a.get(-1);}).toThrow();
+    expect(() => {a.get(0);}).toThrow();
+});
+
+test('Test delete error', () => {
+    let a = new ArrayList<Number>();
+
+    expect(() => {a.delete(-1);}).toThrow();
+    expect(() => {a.delete(0);}).toThrow();
 });

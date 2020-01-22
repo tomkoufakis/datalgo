@@ -109,7 +109,7 @@ class ArrayList<T> implements List<T> {
   }
 
   delete(index: number): void {
-    if (index < 0 && index >= this.size) {
+    if (index < 0 || index >= this.size) {
       throw new Error('index out of bounds');
     }
 

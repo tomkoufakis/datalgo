@@ -1,6 +1,6 @@
 # [@datalgo](https://github.com/tomkoufakis/datalgo)
 
-[![npm](https://img.shields.io/npm/v/datastructures-js.svg)](https://www.npmjs.com/package/datastructures-js)
+[![npm](https://img.shields.io/npm/v/datalgo.svg)](https://www.npmjs.com/package/datalgo)
 (https://www.npmjs.com/package/datalgo)
 
 ### This package exposes a collection of data structures and algorithms for Node applications.

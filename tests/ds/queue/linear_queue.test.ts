@@ -31,12 +31,6 @@ test('Dequeue', () => {
     expect(a.dequeue()).toBe(null);
 });
 
-test('Pop with 0', () => {
-    let a = new LinearQueue<Number>();
-    expect(a.getSize()).toBe(0);
-    expect(a.pop()).toBe(null);
-});
-
 test('Peek', () => {
     let a = new LinearQueue<Number>();
     a.enqueue(1);

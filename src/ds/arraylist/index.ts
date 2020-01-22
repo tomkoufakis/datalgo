@@ -1,4 +1,4 @@
-import { Node } from './node'
+import { Node } from './node';
 
 /**
  * A reference based list implementation
@@ -39,9 +39,9 @@ interface List<T> {
  * See the [[List]] interface for details
  */
 class ArrayList<T> implements List<T> {
-  head: Node<T> | null;
-  tail: Node<T> | null;
-  size: number;
+  private head: Node<T> | null;
+  private tail: Node<T> | null;
+  private size: number;
 
   constructor() {
     this.head = null;
@@ -90,7 +90,7 @@ class ArrayList<T> implements List<T> {
     return this.getNode(index).value;
   }
 
-  getNode(index: number): Node<T> {
+  private getNode(index: number): Node<T> {
     if (index < 0 || index >= this.size) {
       throw new Error('index out of bounds');
     }
@@ -115,13 +115,14 @@ class ArrayList<T> implements List<T> {
 
     if (this.size === 1) {
       this.head = this.tail = null;
-      this.size = 0;
     } else if (index === 0) {
       this.head = this.head!.next;
     } else {
-      const node: Node<T> = this.getNode(index - 1);
-      node.next = null;
-      this.tail = node;
+      const parent: Node<T> = this.getNode(index - 1);
+      const current: Node<T> | null = parent.next;
+      const next: Node<T> | null = current!.next;
+      parent.next = next;
+      this.tail = next == null ? current : parent;
     }
 
     this.size--;

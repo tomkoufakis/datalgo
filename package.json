@@ -2,6 +2,11 @@
   "name": "datalgo",
   "version": "1.0.1",
   "description": "A collection of data structures and algorithms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomkoufakis/datalgo.git"
+  },
+  "homepage": "https://github.com/tomkoufakis/datalgo",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {

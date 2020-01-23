@@ -36,7 +36,7 @@ test('Peek', () => {
     a.enqueue(1);
     a.enqueue(2);
     expect(a.getSize()).toBe(2);
-    expect(a.peek()).toBe(2);
+    expect(a.peek()).toBe(1);
     expect(a.getSize()).toBe(2);
 });
 

@@ -8,7 +8,7 @@ test('Create', () => {
 test('push', () => {
     let a = new ArrayStack<Number>(5);
     a.push(1);
-    expect((a.getSize())).toBe(1);
+    expect(a.getSize()).toBe(1);
     expect(a.peek()).toBe(1);
 });
 

@@ -12,7 +12,7 @@ install:
     - npm install
 script:
     - npm test
-    - sonar-scanner -X
+    - sonar-scanner -X -Dsonar.projectKey=datalgo
 addons:
     sonarcloud:
         organization: "tomkoufakis" # the key of the org you chose at step #3

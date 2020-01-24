@@ -12,9 +12,8 @@ install:
     - npm install
 script:
     - npm test
-    - sonar-scanner
+    - sonar-scanner -X
 addons:
     sonarcloud:
         organization: "tomkoufakis" # the key of the org you chose at step #3
-        token:
-            secure: "cBbl8NQDyQbcmndQwgzAC+zeQTLBe9XEGpV8fXt7XZF9vxzFQ1AnR84ihVssVfxceukZhHTBR7BaaQkCYoUsoCQNPsqzhgpYuxx7ST5W5iDVlX+2sitwlaNdZH8RpF5ga35czjavYAwpfAWFkova4p5BMJMF/ivNYo5qyY8axBrUDmYd/uKmxFIxUHXaKvFDebLRGcTxOjNUt7MQMoLSqjIBsYQ/gwv0pjE5AACRr16DJ1Q8SoBtwEm0a1lWhh5jtZVp2VsFjsUMPpZHE97OccDh0DkDL2kl1lbg7m6/yAgVBVW4e+sSGTjNjwFSSzoqNLNu9skFk5zIoNd1zcyISgRG+CBJq+kVld4lD6YwvAVWwOOlbFMmZ22WNVIl8pAbezndHLCsUUSqMeCz1HkA5RzX8OgIJDS+N6VeXEPdg/IWAB+oAngS4srx6IfBCidMAcT0rYemT94R94z/HrlVfEIESEQk8XkcxvZz45tvi/teTrobC2sbr12Cz8zuX3chA7/gBmx91PLSQUHJBl7wXN4MHlMpTjC8eMOCtz2b/y61rftGqUIl8kSYzYJb3u0aMEKrHxRuE7vjupGAr8dC1MxK31R0wXwsNssoOol/lBNYs73meGwkL480HdRt1SJAiQatP1JeOKGlU29lwJrXKZOnd/qhm12zgrwsTP6DQSw=" # encrypted value of your token
+        

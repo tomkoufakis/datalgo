@@ -2,6 +2,7 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tomkoufakis_datalgo&metric=alert_status)](https://sonarcloud.io/dashboard?id=tomkoufakis_datalgo)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=tomkoufakis_datalgo&metric=code_smells)](https://sonarcloud.io/dashboard?id=tomkoufakis_datalgo)
+[![Build Status](https://travis-ci.com/tomkoufakis/datalgo.svg?branch=master)](https://travis-ci.com/tomkoufakis/datalgo)
 [![npm](https://img.shields.io/npm/v/datalgo.svg)](https://www.npmjs.com/package/datalgo)
 (https://www.npmjs.com/package/datalgo)
 

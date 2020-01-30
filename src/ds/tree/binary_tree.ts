@@ -3,8 +3,8 @@ import { Node } from "./node";
 import { LinearQueue } from "../queue";
 
 class BinaryTree<T> implements Tree<T> {
-    private head: Node<T> | null;
-    private size: number;
+    protected head: Node<T> | null;
+    protected size: number;
 
     constructor() {
         this.head = null;
